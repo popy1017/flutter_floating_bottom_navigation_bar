@@ -31,7 +31,7 @@ class FloatingNavbar extends StatefulWidget {
     this.fontSize = 11.0,
     this.borderRadius = 8,
     this.itemBorderRadius = 8,
-    this.eelevation = 0,
+    this.elevation = 0,
     this.unselectedItemColor = Colors.white,
   })  : assert(items.length > 1),
         assert(items.length <= 5),
