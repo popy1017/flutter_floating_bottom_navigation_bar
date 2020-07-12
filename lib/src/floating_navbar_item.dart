@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class FloatingNavbarItem {
-  final String title;
-  final IconData icon;
+  final Widget title;
+  final Widget icon;
   final Widget customWidget;
 
   FloatingNavbarItem({

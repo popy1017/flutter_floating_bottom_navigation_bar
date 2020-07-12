@@ -133,24 +133,7 @@ ItemBuilder _defaultItemBuilder({
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      Icon(
-                        item.icon,
-                        color: currentIndex == items.indexOf(item)
-                            ? selectedItemColor
-                            : unselectedItemColor,
-                        size: iconSize,
-                      ),
-                      Text(
-                        '${item.title}',
-                        style: TextStyle(
-                          color: currentIndex == items.indexOf(item)
-                              ? selectedItemColor
-                              : unselectedItemColor,
-                          fontSize: fontSize,
-                        ),
-                      ),
-                    ],
+                    children: <Widget>[item.icon, item.title],
                   ),
                 ),
               ),
