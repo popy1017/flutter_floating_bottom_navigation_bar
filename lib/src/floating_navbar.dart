@@ -15,6 +15,7 @@ class FloatingNavbar extends StatefulWidget {
   final double iconSize;
   final double itemBorderRadius;
   final double borderRadius;
+  final double elevation;
   final ItemBuilder itemBuilder;
 
   FloatingNavbar({
@@ -30,6 +31,7 @@ class FloatingNavbar extends StatefulWidget {
     this.fontSize = 11.0,
     this.borderRadius = 8,
     this.itemBorderRadius = 8,
+    this.eelevation = 0,
     this.unselectedItemColor = Colors.white,
   })  : assert(items.length > 1),
         assert(items.length <= 5),
@@ -61,7 +63,7 @@ class _FloatingNavbarState extends State<FloatingNavbar> {
   Widget build(BuildContext context) {
     return BottomAppBar(
       color: Colors.transparent,
-      elevation: 0,
+      elevation: widget.elevation,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
